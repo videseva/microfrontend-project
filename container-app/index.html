@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micro Frontends</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body class="container">
-    <div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Microfrontends </a>
+</nav>
 
-   
-  <h1>Menú Principal</h1>
-
-  <div class="col-md-3">
-    <button  class="btn btn-primary" id="botonRegistrar">Registrar Usuario</button>
-
+<body class="container mb-2">
+  <div class="row mx-2 mt-2 mb-1">
+    <div class="col-md-3">
+      <h5><i class="bi bi-people"></i> Modulo de usuarios</h5>
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-danger" id="botonRegistrar">Registrar</button>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-primary" onclick="cargarVistaReact()">Consultar</button>
+    </div>
   </div>
-  <div class="col-md-3">
-  <button  class="btn btn-primary" onclick="cargarVistaReact()">Consultar</button>
-
+  <div class="row justify-content-center">
+    <div class="col-md-10 mt-1 mb-2" style="border: 3px dotted #befac3;border-radius: 10px 10px 10px 10px;">
+      <img src="img/vue.png" alt="" style="width: 50px;">
+      <div class="alert alert-success" role="alert">
+       Debes validar la información <a href="#" class="alert-link">Manual de usuarios</a>
+      </div>
+    </div>
+    <div class="col-md-4 mx-2" style="border-radius: 10px 10px 10px 10px;border: 3px dotted #cc628c;"> <img
+        src="img/angular.png" alt="" style="width: 50px;">
+      <div id="contenedorAngular"></div>
+    </div>
+    <div class="col-md-6" style="border-radius: 10px 10px 10px 10px;border: 3px dotted #b5abf5;">. <img
+        src="img/React.svg.png" alt="" style="width: 50px;">
+      <div id="contenedorReact"></div>
+    </div>
   </div>
-</div>
-  <!-- Contenedor para cargar la vista de Angular -->
-  <div id="contenedorAngular"></div>
-    <!-- Contenedor para cargar la vista de react -->
-  <div id="contenedorReact"></div>
-
-
-  <!-- Enlaces a los scripts JS -->
   <script src="app.js"></script>
 </body>
+
 </html>

@@ -60,7 +60,7 @@ const UserList = () => {
 
     return (
         <div className="table-detail">
-            <h2 className="mt-4 mb-3 title">Listado de usuarios <span class="badge text-bg-primary">Nuevos</span></h2>
+            <h2 className="title">Listado de usuarios <span class="badge text-bg-primary">Nuevos</span></h2>
             <table className="table table-striped mx-5">
                 <thead className="thead-dark">
                     <tr>
