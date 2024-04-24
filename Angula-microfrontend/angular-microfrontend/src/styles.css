@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 10px !important;
+    
+}
+.card{
+    -webkit-box-shadow: 10px 10px 40px -27px rgba(140,135,140,1);
+-moz-box-shadow: 10px 10px 40px -27px rgba(140,135,140,1);
+box-shadow: 10px 10px 40px -27px rgba(140,135,140,1);
+}
